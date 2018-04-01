@@ -3,7 +3,7 @@
 
 ### Introduction
 
-So far, we have seen how retrieve data from our code, and manipulate that data.  What we have not learned, however, is how to make decisions with that data.  Making decisions is something that we do every day in the real world.  For example, if a restaurant is too expensive we may want to choose a different one.  If it's too cold outside, we should find something to do inside.  These are the types of decisions we want our code to make as well.  After learning about conditionals we can do just that.  
+So far, we have seen how to retrieve data from our code, and manipulate that data.  However, what we have not learned is how to make decisions with that data.  Making decisions is something that we do every day in the real world.  For example, if a restaurant is too expensive, we may want to choose a different one.  If it's too cold outside, we should find something to do inside.  These are the types of decisions we want our code to make as well.  After learning about conditionals we can do just that.  
 
 ### Learning Objectives
 
@@ -13,7 +13,7 @@ So far, we have seen how retrieve data from our code, and manipulate that data. 
 
 ### If statement and execution flow
 
-So far in Python, all of our lines of code run one after the other.  So in the code below, `vacation_days` is assigned to equal 0, then reassigned to incremented zero to one, and then increase it by one more to equal two.
+So far in Python, all of our lines of code run one after the other.  So in the code below, `vacation_days` is assigned to 0, then reassigned to increase from zero to one, and then increase it by one more to be equal to two.
 
 
 ```python
@@ -30,9 +30,9 @@ vacation_days
 
 
 
-> The += is used to increment.  The statement `vacation_days += 1` can be thought of as `vacation_days = vacation_days + 1`.  So before line 2, `vacation_days` is 0.  Then we reassign `vacation_days` to equal the previous value of `vacation_days`, 0, plus one.  And then increment `vacation_days` again.
+> The += is used to increment.  The statement `vacation_days += 1` can be thought of as `vacation_days = vacation_days + 1`.  So before line 2, `vacation_days` is 0.  Then we reassign `vacation_days` to equal to the previous value of `vacation_days`, 0, plus one.  And then increment `vacation_days` again.
 
-Contrast this with code that contains an `if` statement.  Code that is part of an `if` block runs does not run when the conditional argument is `False`.  So it is not necessarily the case that every line of code runs sequentially.
+Contrast this with code that contains an `if` statement.  Code that is part of an `if` block does not run when the conditional argument is `False`.  So it is not necessarily the case that every line of code runs sequentially.
 
 
 ```python
@@ -113,7 +113,7 @@ long_vacation(5) # 'that is a long vacation'
 long_vacation(3) # None
 ```
 
-In the code above, you can hopefully see the power of our `if` statement.  Our `if` argument is the expression `number_of_days > 4`, which sometimes evaluates to `True` and sometimes `False`, it depends on the number of days.
+In the code above, you can hopefully see the power of our `if` statement.  Our `if` argument is the expression `number_of_days > 4`, which sometimes evaluates to `True` and sometimes `False`, depending on the number of days.
 
 Now sometimes we want to say that when something is `True` do one thing, and when not `True` do something **else**.
 
@@ -159,7 +159,7 @@ vacation_days
 
 
 
-Even through `vacation_days` did not equal `True` above, it still ran the code in the `if` block because `vacation_days` equaled 1 and 1 is considered truthy.
+Even though `vacation_days` did not equal `True` above, it still ran the code in the `if` block because `vacation_days` equaled 1 and 1 is considered truthy.
 
 However, `0` is not considered truthy.  
 
